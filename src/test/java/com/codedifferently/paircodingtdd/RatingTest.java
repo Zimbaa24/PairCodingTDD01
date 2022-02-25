@@ -1,2 +1,4 @@
-package com.codedifferently.paircodingtdd;public class RatingTest {
+package com.codedifferently.paircodingtdd;
+
+public class RatingTest {
 }
