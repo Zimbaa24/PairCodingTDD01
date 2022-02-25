@@ -6,7 +6,8 @@ public class Movie {
     private Double ranking;
     private Integer length;
 
-    public  Movie(String title, Rating rating, Double ranking, Integer length) {
+
+    public Movie(String title, Rating rating, Double ranking, Integer length) {
         this.title = title;
         this.rating = rating;
         this.ranking = ranking;
@@ -14,35 +15,41 @@ public class Movie {
     }
 
     public String getTitle() {
-        return "Movie: " + title;
+        return title;
     }
 
     public void setTitle(String title) {
-
+        this.title = title;
     }
 
-    public Rating getRating() {
-        return rating;
-    }
+        public Rating getRating () {
+            return rating;
+        }
 
-    public void setRating(Rating rating) {
-    }
+        public void setRating (Rating rating){
+            this.rating = rating;
+        }
 
-    public Double getRanking() {
-        return ranking;
-    }
+        public Double getRanking () {
+            return ranking;
+        }
 
-    public void setRanking(Double ranking) {
-    }
+        public void setRanking (Double ranking){
+            this.ranking = ranking;
+        }
 
-    public Integer getLength() {
-        return length;
-    }
+        public Integer getLength () {
+            return length;
+        }
 
-    public void setLength(Integer length) {
-    }
+        public void setLength (Integer length){
+            this.length = length;
+        }
 
+        public String toString () {
+            return "Movie: " + title + ", Rating: " + rating + ", Ranking: " + ranking + ", Length: " + length;
 
+        }
 
 
     }
